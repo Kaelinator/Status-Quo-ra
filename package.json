@@ -1,0 +1,36 @@
+{
+  "name": "status-quo-ra",
+  "version": "1.0.0",
+  "description": "Tracks user statistics",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaelinator/Status-Quo-ra.git"
+  },
+  "keywords": [
+    "user",
+    "stats",
+    "track",
+    "statistics"
+  ],
+  "author": "Kael Kirk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kaelinator/Status-Quo-ra/issues"
+  },
+  "homepage": "https://github.com/Kaelinator/Status-Quo-ra#readme",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^2.2.31"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express-server": "^0.5.3"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "status-quo-ra",
+  "description": "Tracks user statistics",
+  "main": "main.js",
+  "authors": [
+    "Kael Kirk"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "user",
+    "stats",
+    "track",
+    "statistics"
+  ],
+  "homepage": "https://github.com/Kaelinator/Status-Quo-ra",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "boostrap#^3.3.7"
+  }
+}
