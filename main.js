@@ -1,15 +1,21 @@
 const express = require('express');
-const handlebars = require('express-handlebars');
-const mongo = require('mongodb');
+const handlebars = require('express-handlebars').create({defaultLayout: 'main'});
 
 const app = express();
 
 app.disable('x-powered-by');
-app.engine('handlebars', handlebars.create({defaultLayout: 'main'}));
+app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', process.env.PORT || 3000);
+app.use('/books', require('./back/routes/books.js'));
+app.use('/products', require('./back/routes/books.js'));
 
-const genericRoutes = require('./back/routes/generics.js');
+app.get('/', function(req, res) {
+	res.send('It worked!');
+});
 
-app.use(genericRoutes);
-app.use(express.static('front/data'));
+app.listen(app.get('port'), function() {
+	console.log('Express started & listening!');
+});
+
+// app.use(express.static('front/data'));
