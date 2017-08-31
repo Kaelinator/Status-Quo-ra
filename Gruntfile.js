@@ -20,6 +20,7 @@ module.exports = function(grunt) {
 			express: {
 				files: [
 					'front/source/**/*.handlebars',
+					'front/views/**/*.pug',
 					'front/source/**/*.js',
 					'back/**/*.js',
 					'main.js'

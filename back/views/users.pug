@@ -1,0 +1,10 @@
+extend layouts/main.pug
+
+block contents
+	h1 Howdy!
+	if results && results.length > 0
+		each user in results
+			+printUser(user)
+	
+block footer
+	h5 We're done
