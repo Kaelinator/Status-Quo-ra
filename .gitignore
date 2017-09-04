@@ -1,7 +1,6 @@
 # ignore packages installed by npm & bower
 
 node_modules
-bower_components
 *~
 
 # Shhh!

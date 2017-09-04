@@ -24,16 +24,15 @@
   "homepage": "https://github.com/Kaelinator/Status-Quo-ra#readme",
   "dependencies": {
     "express": "^4.15.4",
-    "lodash": "^4.17.4",
     "monk": "^6.0.3",
-    "path": "^0.12.7",
-    "pug": "^2.0.0-rc.3"
+    "pug": "^2.0.0-rc.3",
+    "quora-scraper": "^1.0.2"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-express-server": "^0.5.3",
-    "grunt-mocha-test": "^0.13.2",
-    "mocha": "^3.5.0"
+    "grunt-tape": "^0.1.0",
+    "tape": "^4.8.0"
   }
 }

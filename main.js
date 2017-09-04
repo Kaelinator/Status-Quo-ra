@@ -1,5 +1,4 @@
 const express = require('express')
-const path = require('path')
 const pug = require('pug')
 const error = require('./routes/error.js');
 
@@ -8,7 +7,6 @@ const app = express()
 app.disable('x-powered-by')
 
 app.set('view engine', 'pug')
-// app.set('views', __dirname + '/views')
 app.set('port', process.env.PORT || 3000)
 
 app.use('/', require('./routes/root.js'))

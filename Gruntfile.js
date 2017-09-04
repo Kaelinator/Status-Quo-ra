@@ -11,13 +11,14 @@ module.exports = function(grunt) {
 			}
 		},
 
-		mochaTest: {
-			test: {
-				options: {
-					reporter: 'spec'
-				},
-				src: ['tests/**/*.test.js']
-			}
+		tape: {
+
+			options: {
+				pretty: true,
+				output: 'console'
+			},
+
+			files: ['test/**/*.test.js']
 		},
 
 		watch: {
@@ -34,7 +35,7 @@ module.exports = function(grunt) {
 					'views/**/*.pug',
 					'main.js'
 				],
-				tasks: ['test-scripts', 'reboot'],
+				tasks: ['test', 'reboot'],
 				options: {
 					spawn: false
 				}
@@ -43,10 +44,10 @@ module.exports = function(grunt) {
 	})
 
 	grunt.loadNpmTasks('grunt-contrib-watch')
-	grunt.loadNpmTasks('grunt-mocha-test')
 	grunt.loadNpmTasks('grunt-express-server')
+	grunt.loadNpmTasks('grunt-tape')
 
-	grunt.registerTask('default', ['watch'])
-	grunt.registerTask('test-scripts', 'mochaTest')
+	grunt.registerTask('default', ['test', 'reboot', 'watch'])
+	grunt.registerTask('test', 'tape')
 	grunt.registerTask('reboot', ['express:dev:stop', 'express:dev'])
 }
