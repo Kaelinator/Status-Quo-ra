@@ -1,4 +1,11 @@
 mixin printUser(user)
 	h4 #{user.name}
-	//- h2= `This is ${user.name}`
-	//- h4= `Age: ${user.age}, pet: ${user.pet}`
+
+mixin populateNavbar(links)
+	each link in links
+		if link.active
+			li.nav-item.active
+				a.nav-link(href=`${link.href}`) #{link.text}
+		else
+			li.nav-item
+				a.nav-link(href=`${link.href}`) #{link.text}

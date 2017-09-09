@@ -33,6 +33,7 @@ module.exports = function(grunt) {
 					'routes/**/*.js',
 					'views/**/*.js',
 					'views/**/*.pug',
+					'test/**/*.test.js',
 					'main.js'
 				],
 				tasks: ['test', 'reboot'],
