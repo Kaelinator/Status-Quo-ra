@@ -3,7 +3,7 @@ const errors = module.exports = {}
 
 errors.internal = (err, req, res, next) => {
 	res.status(500)
-		.send('500 : error!')
+		.send(res)
 }
 
 errors.client = (req, res) => {

@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/Kaelinator/Status-Quo-ra#readme",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "express": "^4.15.4",
+    "jquery": "^3.2.1",
     "monk": "^6.0.3",
     "pug": "^2.0.0-rc.3",
     "quora-scraper": "^1.0.2"

@@ -1,13 +1,23 @@
 include mixins.pug
 doctype html
 html
+
 	head
 		meta(charset='utf-8')
 		title Testing!
+
 	body
 		include ../partials/navbar.pug
+
 		.container
 			block contents
 
 		.footer
 			block footer
+
+		script
+			include ../../node_modules/bootstrap/dist/js/bootstrap.min.js
+			include ../../node_modules/jquery/dist/jquery.min.js
+
+		style
+			include ../../node_modules/bootstrap/dist/css/bootstrap.min.css

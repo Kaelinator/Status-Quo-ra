@@ -7,8 +7,6 @@ router.route('/:query?')
 
 function find(req, res, next) {
 
-	profiles.find().then((u) => console.log(u))
-
 	profiles.find()
 		.then((u) => res.render('users.pug', {results: u}))
 		.catch((err) => { next(err) })

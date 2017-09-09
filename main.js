@@ -1,8 +1,6 @@
-const express = require('express')
+const app = require('express')()
 const pug = require('pug')
 const error = require('./routes/error.js');
-
-const app = express()
 
 app.disable('x-powered-by')
 
