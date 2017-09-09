@@ -1,9 +1,9 @@
 mixin printUser(user)
 	h4 #{user.name}
 
-mixin populateNavbar(links)
+mixin populateNavbar(links, pageId)
 	each link in links
-		if link.active
+		if link.id === pageId
 			li.nav-item.active
 				a.nav-link(href=`${link.href}`) #{link.text}
 		else

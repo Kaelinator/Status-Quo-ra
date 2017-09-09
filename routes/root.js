@@ -10,9 +10,9 @@ router.route('/about')
 
 function home(req, res, next) {
 
-	res.render('home.pug', { navLinks: navbar.generateLinks(0) })
+	res.render('home.pug', { navLinks: navbar.links, pageId: 0 })
 }
 
 function about(req, res, next) {
-	res.render('about.pug', { navLinks: navbar.generateLinks(1) })
+	res.render('about.pug', { navLinks: navbar.links, pageId: 1 })
 }

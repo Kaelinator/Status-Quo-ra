@@ -1,8 +1,8 @@
-nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
+nav.navbar.navbar-toggleable-md.navbar-light.bg-faded.sticky-top
 	button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navigate')
 		img.navbar-toggler-icon(src='http://pm1.narvii.com/6421/0d5062dcf1eb3c5b1891cf7cb5918f7157549bc8_00.jpg')
 	a.navbar-brand(href='#') Status Quo-ra
 
 	div.collapse.navbar-collapse(id='navigate')
 		ul.navbar-nav.mr-auto
-			+populateNavbar(navLinks)
+			+populateNavbar(navLinks, pageId)

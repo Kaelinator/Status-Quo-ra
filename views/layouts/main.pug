@@ -4,7 +4,7 @@ html
 
 	head
 		meta(charset='utf-8')
-		title Testing!
+		title #{title || ''} - Status Quo-ra
 
 	body
 		
@@ -20,6 +20,8 @@ html
 			include ../../node_modules/jquery/dist/jquery.min.js			
 			include ../../node_modules/tether/dist/js/tether.min.js
 			include ../../node_modules/bootstrap/dist/js/bootstrap.min.js
+			include ../scripts/script.js
 
 		style
 			include ../../node_modules/bootstrap/dist/css/bootstrap.min.css
+			include ../styles/style.css

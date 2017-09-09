@@ -8,7 +8,7 @@ router.route('/:query?')
 
 function find(req, res, next) {
 
-	res.render('users.pug', { navLinks: navbar.generateLinks(2) })
+	res.render('users.pug', { navLinks: navbar.links, pageId: 2 })
 	// profiles.find()
 	// 	.then((u) => res.render('users.pug', {results: u}))
 	// 	.catch((err) => { next(err) })
