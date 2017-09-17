@@ -2,8 +2,11 @@ extend layouts/main.pug
 
 block contents
 	.spacer.py-5
-	.jumbotron
+	.jumbotron.card
 		h1.logo.text-center.py-5 Status Quo-ra
 		p.tagline.text-center
-			| Using Status Quo-ra, you gain access to 
-			| user's growth statistics.
+			| Using Status Quo-ra, you gain access to users' growth statistics.
+		.input-group
+			.input-group-addon
+				img(src='/data/magnifying-glass.png')
+			input.form-control#searchBar(type='text' placeholder='Your favorite user')

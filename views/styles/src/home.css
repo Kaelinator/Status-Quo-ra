@@ -8,3 +8,12 @@
 	font-family: Georgia, Times;
 	color: #999;
 }
+
+body {
+
+	background-color: #fafafa;
+}
+
+.card {
+	background-color: #fff;
+}

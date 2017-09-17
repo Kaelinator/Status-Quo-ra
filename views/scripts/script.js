@@ -1,0 +1,1 @@
+$("searchBar").change(function(){});
