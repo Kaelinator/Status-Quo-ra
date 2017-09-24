@@ -1,9 +1,15 @@
 const router = module.exports = require('express').Router()
+const {profiles} = require('../database/models.js')
 
 router.route('/')
   .get(grab)
 
 function grab(req, res, next) {
+  
+  if (req.query.query == '')
+    return res.send([])
 
-  res.send({ data: 'this is some data' })
+  profiles.find({ user: { $regex: RegExp(`^${req.query.query}`) } })
+    .then((docs) => { res.send(docs) })
+    .catch((err) => { throw new Error(err) })
 }

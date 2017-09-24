@@ -1,16 +1,14 @@
-'use strict'
-
 $('#searchBar').on('input', function() {
 
   const search = $(this).val()
 
   $.ajax({
 
-    type: 'GET',
-    url: '',
-    success: (data) => {
-      
-    }
+    method: 'GET',
+    url: '/rest',
+    data: { query: search }
   })
+  .done((data) => { console.log('done', data) })
+  .fail((err) => { console.log('err', err) })
 
 })

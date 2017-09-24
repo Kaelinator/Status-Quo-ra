@@ -1,1 +1,1 @@
-"use strict";$("#searchBar").on("input",function(){$(this).val();$.ajax({type:"GET",url:"",success:s=>{}})});
+$("#searchBar").on("input",function(){const o=$(this).val();$.ajax({method:"GET",url:"/rest",data:{query:o}}).done(o=>{console.log("done",o)}).fail(o=>{console.log("err",o)})});
