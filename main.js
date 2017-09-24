@@ -11,6 +11,7 @@ app.set('port', process.env.PORT || 3000)
 
 app.use('/', require('./routes/root.js'))
 app.use('/users', require('./routes/users.js'))
+app.use('/rest', require('./routes/rest.js'))
 
 app.use('/data', express.static(path.join(__dirname, 'views', 'data')))
 

@@ -1,5 +1,4 @@
-const express = require('express')
-const router = module.exports = express.Router()
+const router = module.exports = require('express').Router()
 const navbar = require('./utils/navbar.js')
 // const {profiles} = require('../database/models.js')
 

@@ -1,17 +1,16 @@
-// $('#searchBar').on('input', function() {
+'use strict'
 
-//   $.ajax({
+$('#searchBar').on('input', function() {
 
-//     type: 'GET',
-//     url: '',
-//     success: function(data) {
-//       console.log(data)
-//     }
-//   })
+  const search = $(this).val()
 
-//   console.log($(this).val())
-// })
+  $.ajax({
 
-$('searchBar').change(function() {
-  
+    type: 'GET',
+    url: '',
+    success: (data) => {
+      
+    }
+  })
+
 })
