@@ -1,1 +1,1 @@
-$("#searchBar").on("input",function(){const o=$(this).val();$.ajax({method:"GET",url:"/rest",data:{query:o}}).done(o=>{console.log("done",o)}).fail(o=>{console.log("err",o)})});
+const suggest=s=>{const t=$("#suggestions").empty();s.forEach(s=>{$(t).append(`<li class='list-group-item list-group-item-action'>${s.user}</li>`)})};$("#searchBar").on("input focus",function(){const s=$(this).val();$.ajax({method:"GET",url:"/rest",data:{query:s}}).done(suggest).fail(s=>{console.log("err",s)})}),$("#searchBar").on("focusout",function(){$("#suggestions").empty()});

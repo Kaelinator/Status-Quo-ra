@@ -17,3 +17,8 @@ body {
 .card {
 	background-color: #fff;
 }
+
+#suggestions {
+
+	position: absolute;
+}
